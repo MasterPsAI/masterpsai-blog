@@ -1,120 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MasterPsAI | Intelligent AI Solutions</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.6;
-      background: #f5f7fa;
-      color: #333;
-    }
-    header {
-      background: linear-gradient(120deg, #6A8DFF, #A66CFF);
-      color: white;
-      padding: 60px 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin-bottom: 10px;
-      font-size: 2.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    .container {
-      max-width: 1200px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    .services {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-    .service {
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      flex: 1 1 250px;
-      margin: 15px;
-      padding: 20px;
-      text-align: center;
-    }
-    .service h3 {
-      margin-bottom: 10px;
-      color: #6A8DFF;
-    }
-    .about {
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      padding: 20px;
-      margin-bottom: 30px;
-    }
-    footer {
-      background: #222;
-      color: #aaa;
-      text-align: center;
-      padding: 20px;
-    }
-    a.button {
-      display: inline-block;
-      margin-top: 20px;
-      background: #6A8DFF;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 4px;
-      text-decoration: none;
-    }
-    @media (max-width: 768px) {
-      .services {
-        flex-direction: column;
-      }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MasterPsAI | AI Solutions</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #0a192f;
+    color: #ccd6f6;
+    line-height: 1.6;
+  }
+  header {
+    background: linear-gradient(135deg, #0a192f 0%, #020c1b 100%);
+    padding: 100px 20px;
+    text-align: center;
+  }
+  header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #64ffda;
+  }
+  header p {
+    font-size: 1.2em;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: #8892b0;
+  }
+  header .btn {
+    background-color: #64ffda;
+    color: #0a192f;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1em;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+  }
+  header .btn:hover {
+    background-color: #52cbbd;
+  }
+  .section {
+    padding: 80px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #64ffda;
+    font-size: 2.2em;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  .card {
+    background-color: #112240;
+    border-radius: 10px;
+    padding: 30px;
+    flex: 1 1 250px;
+    max-width: 300px;
+    min-width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  .card h3 {
+    margin-top: 0;
+    color: #64ffda;
+    margin-bottom: 15px;
+  }
+  .card p {
+    color: #8892b0;
+    font-size: 0.95em;
+  }
+  #about p {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #8892b0;
+  }
+  #contact a {
+    color: #64ffda;
+    text-decoration: none;
+  }
+  footer {
+    background-color: #020c1b;
+    color: #8892b0;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+  }
+</style>
 </head>
 <body>
-  <header>
-    <h1>Welcome to MasterPsAI</h1>
-    <p>Revolutionizing your workflow with intelligent, AI-driven solutions.</p>
-    <a href="#contact" class="button">Contact Us</a>
-  </header>
-  <div class="container">
-    <section class="services">
-      <div class="service">
-        <h3>Personal AI Assistant</h3>
-        <p>Get personalized assistance for scheduling, reminders, and daily tasks powered by advanced AI.</p>
-      </div>
-      <div class="service">
-        <h3>Automation & Integration</h3>
-        <p>Automate repetitive workflows and integrate AI seamlessly into your existing tools and systems.</p>
-      </div>
-      <div class="service">
-        <h3>Data Analytics</h3>
-        <p>Unlock insights from your data using our AI-powered analytics and visualization tools.</p>
-      </div>
-      <div class="service">
-        <h3>Creative AI Solutions</h3>
-        <p>Leverage AI for content generation, design assistance, and creative brainstorming.</p>
-      </div>
-    </section>
-    <section class="about">
-      <h2>About MasterPsAI</h2>
-      <p>MasterPsAI is dedicated to delivering cutting-edge AI solutions that streamline your tasks and empower you to focus on what matters most. Our mission is to bring the power of artificial intelligence to everyone through intuitive, accessible tools and personalized services.</p>
-    </section>
-    <section id="contact" class="about">
-      <h2>Contact Us</h2>
-      <p>Have questions or ready to get started? Reach out to us at <a href="mailto:info@masterpsai.blog">info@masterpsai.blog</a>, and we'll get back to you soon.</p>
-    </section>
+<header>
+  <h1>Welcome to MasterPsAI</h1>
+  <p>Your partner in intelligent automation and cutting‑edge AI solutions. We create bespoke AI experiences to transform the way you work.</p>
+  <a href="#contact" class="btn">Get Started</a>
+</header>
+
+<section id="services" class="section">
+  <h2>Our Services</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Intelligent Assistants</h3>
+      <p>Personal AI assistants tailored to your workflow, helping you manage tasks, reminders, and communications effortlessly.</p>
+    </div>
+    <div class="card">
+      <h3>Automation & Integration</h3>
+      <p>Streamline your processes by integrating AI-driven automation across your tools and platforms.</p>
+    </div>
+    <div class="card">
+      <h3>Data Insights</h3>
+      <p>Harness the power of data with advanced analytics and visualization to drive informed decisions.</p>
+    </div>
+    <div class="card">
+      <h3>Custom AI Solutions</h3>
+      <p>From chatbots to predictive models, we build custom AI applications that solve your unique challenges.</p>
+    </div>
   </div>
-  <footer>
-    &copy; 2025 MasterPsAI. All rights reserved.
-  </footer>
+</section>
+
+<section id="about" class="section">
+  <h2>About MasterPsAI</h2>
+  <p>At MasterPsAI, we are passionate about making artificial intelligence accessible and impactful. Our mission is to design smart, intuitive solutions that empower individuals and businesses to achieve more. By blending creativity with state‑of‑the‑art technology, we deliver experiences that are as unique as your goals.</p>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact Us</h2>
+  <p>Interested in working with us? Reach out at <a href="mailto:info@masterpsai.blog">info@masterpsai.blog</a>.</p>
+</section>
+
+<footer>
+  &copy; <span id="year"></span> MasterPsAI. All rights reserved.
+</footer>
+
+<script>
+  // Automatically update year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
